@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(110, 2, 99);
+    background-color: rgb(255, 255, 255);
   }
   .header {
 padding: 80px;
@@ -10,7 +10,7 @@ color: white;
 .navbar{
     border:1px solid rgb(255, 255, 255); 
     overflow: hidden;
-background-color: #333;
+background-color: #111010;
 grid-row-end: form;
 }
 .navbar a{
@@ -23,6 +23,10 @@ grid-row-end: form;
 }
 .navbar a:hover {
     
-    color: black;
+    color: rgb(255, 255, 255);
     border-bottom: 3px solid rgb(228, 224, 224);
+}
+a.bold {
+    font-weight: bold;
+     border-bottom: 3px solid rgb(245, 242, 242);
 }
