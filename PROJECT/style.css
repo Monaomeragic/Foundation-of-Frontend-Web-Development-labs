@@ -30,3 +30,6 @@ a.bold {
     font-weight: bold;
      border-bottom: 3px solid rgb(245, 242, 242);
 }
+.nav_right{
+    float: right;
+}
