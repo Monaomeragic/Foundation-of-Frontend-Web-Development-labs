@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(18, 2, 110);
+  }
+  .header {
+padding: 80px;
+text-align: center;
+background: #5473ca;
+color: white;
+}
+.navbar{
+    border:1px solid rgb(255, 255, 255); 
+    overflow: hidden;
+background-color: #333;
+grid-row-end: form;
+}
+.navbar a{
+    float: left;
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 17px 23px; 
+    text-decoration: none; 
+}
+.navbar a:hover {
+    
+    color: black;
+    border-bottom: 3px solid rgb(228, 224, 224);
+}
