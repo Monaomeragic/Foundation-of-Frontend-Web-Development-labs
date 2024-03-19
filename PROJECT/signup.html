@@ -3,7 +3,11 @@
 <link rel="stylesheet" href="style.css">
 <body>
  <div class="navbar">
-    <a href="./project.html" >Home</a>
+    <a href="./project.html" >
+      <div class="logo">
+        <img src="./images/billie2.png" alt="prva" weight="29px" height="30px">
+        </div>
+    </a></a>
     <a href="./about.html">About</a>
     <a href="./music.html">Music</a>
     <a href="./events.html">Events</a>
@@ -13,12 +17,10 @@
 </div>
  </div>
     <br>
-    <br><br><br><br>
-    <br>
     <table>
-       
+        <h2>Sign up for receiving notification about events in your city</h2>
+        <br>
         <div class="sign"> 
-        <h2>Sign up for receiving notification about events</h2>
         <div>
             <label>Name</label>
             <br>
@@ -28,7 +30,7 @@
           <div>
             <label>Surname</label>
             <br>
-            <input  type="text" required name="Name">
+            <input  type="text" required name="Name" >
           </div>
           <br>
           <div >
@@ -46,15 +48,21 @@
           <div>
             <label>Gender</label>
             <br>
-            <input  type="checkbox" required name="Sex">
+            <input  type="checkbox" required >
             <label for="spol1">Female</label><br>
-            <input  type="checkbox" required name="Sex">
+            <input  type="checkbox" required >
             <label for="spol2">Male</label><br>
           </div>
           <br>
-          <div class="submit">
-            <a href="./project.html" >Submit</a>
+          <div>
+          <label>City</label>
+          <br>
+          <input type="city" required name="City">
           </div>
+          <br>
+          <button class="submit">
+            <a href="./project.html" >Submit</a>
+          </button>
         
     
             </td>
