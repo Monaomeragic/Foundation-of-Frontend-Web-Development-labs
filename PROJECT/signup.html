@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
 <body>
  <div class="navbar">
     <a href="./project.html" >
@@ -13,63 +16,56 @@
     <a href="./events.html">Events</a>
     <div class="nav_right">
         <a href="./signup.html" class="bold">Sign up</a>
-    <form action="/action_page.php"></form>
-</div>
+ </div>
  </div>
     <br>
-    <table>
+<table>
         <h2>Sign up for receiving notification about events in your city</h2>
         <br>
+        <form id="signupForm" action="./project.html" method="get">
         <div class="sign"> 
         <div>
-            <label>Name</label>
+            <label for="name">Name</label>
             <br>
-            <input type="text" required name="Name">
+            <input type="text" id="name" required name="Name">
           </div>
           <br>
           <div>
-            <label>Surname</label>
+            <label for="surname">Surname</label>
             <br>
-            <input  type="text" required name="Name" >
+            <input  type="text" id="surname" required name="Surname" >
           </div>
           <br>
           <div >
-            <label>Email</label>
+            <label for="email">Email</label>
             <br>
-            <input  type="text" required name="Email">
+            <input  type="text" id="email" required name="Email">
           </div>
           <br>
           <div>
-            <label>Birth date</label>
+            <label for="birthdate">Birth date</label>
             <br>
-            <input  type="date" required name="Date">
+            <input  type="date" id="birthdate" required name="Date">
           </div>
           <br>
           <div>
-            <label>Gender</label>
+            <label for="gender">Gender</label>
             <br>
-            <input  type="checkbox" required >
-            <label for="spol1">Female</label><br>
-            <input  type="checkbox" required >
-            <label for="spol2">Male</label><br>
+            <input  type="radio" id="female" required name="Gender" value="female">
+            <label for="female">Female</label><br>
+            <input  type="radio" id="male" required name="Gender" value="male">
+            <label for="male">Male</label><br>
           </div>
           <br>
           <div>
-          <label>City</label>
+          <label for="city">City</label>
           <br>
-          <input type="city" required name="City">
+          <input type="city" id="city" required name="City">
           </div>
           <br>
-          <button class="submit">
-            <a href="./project.html" >Submit</a>
-          </button>
-        
-    
-            </td>
-     </table>
-
-
-
+          <button type="submit" class="submit">Submit</button>
+    </form>
+</table>
     <footer>
         <p>created by Mona Omeragic</p>
     </footer>

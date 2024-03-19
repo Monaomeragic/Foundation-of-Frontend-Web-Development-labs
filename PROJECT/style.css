@@ -64,8 +64,8 @@ h2{
         color: black; 
         border: 3px solid rgb(44, 174, 15);
     } 
-    .submit a:hover{
-        color: rgb(44, 174, 15);
+    .submit:active{
+        background-color: rgb(44, 174, 15);
           }
 input{
     border: 3px solid rgb(44, 174, 15);
