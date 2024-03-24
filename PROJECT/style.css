@@ -1,5 +1,6 @@
 body {
     background-color: rgb(255, 255, 255);
+    flex-direction: column;
   }
   .header {
 padding: 80px;
@@ -70,5 +71,36 @@ h2{
 input{
     border: 3px solid rgb(44, 174, 15);
 }
-          
-      
+.albums {
+    margin: 20px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 240px;
+    height: 320px;
+    border-radius: 9px;
+    transition: border-width 0.3s ease;
+  }
+  
+.albums:hover {
+    border-color: rgb(44, 174, 15);
+    border-radius: 10px;
+  }
+  .desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .albums img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  footer {
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+.albfont{
+    font-family: Courier New;
+    font-size: 10px;
+}
