@@ -10,22 +10,29 @@ color: white;
 }
 .navbar{
     border:1px solid rgb(255, 255, 255); 
-    overflow: hidden;
+    overflow:hidden;
+    width: 100%;
 background-color: #111010;
 grid-row-end: form;
+font-family: "Copperplate",Fantasy;
+
 }
 .navbar a{
     float: left;
     display: block; 
     color: white;
     text-align: center;
-    padding: 17px 23px; 
+    padding: 17px 29px; 
+    font-size: 15px;
+    height: 16px;
+
     text-decoration: none; 
 }
 .navbar a:hover {
     
     color: rgb(255, 255, 255);
-    border-bottom: 3px solid rgb(44, 174, 15);;
+    border-bottom: 3px solid rgb(44, 174, 15);
+    height: 16px; 
 }
 a.bold {
     font-weight: bold;
@@ -35,16 +42,20 @@ a.bold {
     float: right;
 }
 .sign{
-    text-align: center;
+    text-align:center;
+    width:100%;
     font-size:120%;
     color: white;
     background-color:  rgb(0, 0, 0);
-    border: 3px solid rgb(44, 174, 15);
+    border-top:3px solid rgb(44, 174, 15) ;
+    font-family: "Copperplate",Fantasy;
 }
 h2{
     color:#090b0e;
     background-color: white;
     text-align: center;
+    font-family: "Copperplate",Fantasy;
+
 }
  .logo{
     width: 20px;
@@ -64,12 +75,21 @@ h2{
         background-color: white; 
         color: black; 
         border: 3px solid rgb(44, 174, 15);
+        border-radius: 9px;
+        font-family: "Copperplate",Fantasy;
+        
     } 
     .submit:active{
         background-color: rgb(44, 174, 15);
           }
+          .submit a{
+            color: black;
+            text-decoration: none;
+        }
 input{
     border: 3px solid rgb(44, 174, 15);
+    border-radius: 9px;
+    align-items: center;
 }
 .albums {
     margin: 20px;
@@ -78,7 +98,7 @@ input{
     width: 240px;
     height: 320px;
     border-radius: 9px;
-    transition: border-width 0.3s ease;
+    transition: border-width 0.5s ease;
   }
   
 .albums:hover {
@@ -89,6 +109,7 @@ input{
     padding: 15px;
     text-align: center;
     font-size: 15px;
+    font-family: "Copperplate",Fantasy;
   }
   .albums img {
     width: 100%;
@@ -103,4 +124,74 @@ input{
 .albfont{
     font-family: Courier New;
     font-size: 10px;
+    font-family: "Copperplate",Fantasy;
+}
+.prva{
+    align-items: left;
+    width: 120px;
+    height: 70px;
+}
+.onj{
+    text-align:right;
+    font-size: 25px;
+    font-family: "Lucida Handwriting",cursive;
+}
+.m{
+    text-align:right;
+    width:100%;
+    color: black;
+    border-top:3px solid rgb(44, 174, 15) ;
+}
+.ab{
+    text-align: center;
+    font-family: "Copperplate",Fantasy;
+}
+.ma{
+    background-color: black;
+    
+    height: auto;
+    text-align: center;
+    color: white;
+    flex-direction: row;
+    display:flex;
+    padding: 30px;
+}
+.tt{
+    width: 50%;
+    text-align: left;
+    color: white;
+    font-family: "Copperplate",Fantasy;
+}
+.image{
+    flex: 1;
+    
+}
+.image img{
+    border: 3px solid rgb(44, 174, 15);
+    
+
+}
+
+.butnsong{
+    border: none;
+        padding: 16px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: black; 
+        color: white; 
+        border: 3px solid rgb(44, 174, 15);
+        border-radius: 9px;
+        font-family: "Copperplate",Fantasy;
+        
+    } 
+.butnsong:active{
+        background-color: rgb(44, 174, 15);
+          }
+.butnsong a{
+    color: white;
+    text-decoration: none;
 }
