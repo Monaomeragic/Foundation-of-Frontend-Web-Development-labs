@@ -93,7 +93,7 @@ input{
 }
 .albums {
     margin: 20px;
-    border: 2px solid #ccc;
+    border: 3px solid #ccc;
     float: left;
     width: 240px;
     height: 320px;
@@ -103,7 +103,7 @@ input{
   
 .albums:hover {
     border-color: rgb(44, 174, 15);
-    border-radius: 10px;
+    border-radius: 9px;
   }
   .desc {
     padding: 15px;
@@ -114,7 +114,7 @@ input{
   .albums img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 6px;
   }
   footer {
     color: black;
@@ -136,11 +136,12 @@ input{
     font-size: 25px;
     font-family: "Lucida Handwriting",cursive;
 }
-.m{
+.green{
     text-align:right;
     width:100%;
     color: black;
     border-top:3px solid rgb(44, 174, 15) ;
+
 }
 .ab{
     text-align: center;
@@ -161,6 +162,7 @@ input{
     text-align: left;
     color: white;
     font-family: "Copperplate",Fantasy;
+
 }
 .image{
     flex: 1;
@@ -168,6 +170,9 @@ input{
 }
 .image img{
     border: 3px solid rgb(44, 174, 15);
+    border-radius: 12px;
+    height: 92%;
+    width: 52%;
     
 
 }
@@ -194,4 +199,150 @@ input{
 .butnsong a{
     color: white;
     text-decoration: none;
+}
+.tt2{
+    color:black;
+    font-family: "Copperplate",Fantasy;
+    width: 50%;
+    text-align: center;
+ 
+
+}
+.butnevent{
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid rgb(44, 174, 15);
+    border-radius: 9px;
+    font-family: "Copperplate",Fantasy;
+}
+.butnevent:active{
+    background-color: rgb(44, 174, 15);
+}
+.butnevent a{
+    text-decoration: none;
+}
+.ma2{
+    height: auto;
+    text-align: center;
+    color: black;
+    flex-direction: row;
+    display:flex;
+    padding: 30px;
+}
+.image2{
+    flex: 1;
+    border-radius: 9px;
+    
+}
+.image2 img{
+    border: 3px solid rgb(44, 174, 15);
+    height: 95%;
+    width: 100%;
+    border-radius: 9px;
+
+}
+.gg{
+        text-align:right;
+        width:100%;
+        color: black;
+        border-top:3px solid rgb(44, 174, 15) ;
+    
+    }
+.tickets{
+    width: 100%;
+    border: 3px solid #ccc;
+    float: left;
+    height: 80px;
+    border-radius: 19px;
+    transition: border-width 0.5s ease;
+    display: flex;
+    text-align: center;
+    
+}
+.tick{
+    text-align: center;
+    font-family: "Copperplate",Fantasy;
+    padding-right: auto;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+.picevent{
+   padding-left: 10px;
+   border-radius: 10px;
+   display: flex;
+   text-align: center;
+   margin-right: 20px;
+   flex-grow: 1;
+   
+}
+.tick h2,
+.tick p {
+    margin: 0;
+}
+
+.buybutn,.time{
+    font-family: "Copperplate",Fantasy;
+    margin-left: auto;
+    margin-top: 19px;
+    color:rgb(44, 174, 15);
+}
+.butnconcert {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid rgb(44, 174, 15);
+    border-radius: 15px;
+    font-family: "Copperplate",Fantasy;
+}
+.butnconcert:active{
+    background-color: rgb(44, 174, 15);
+}
+.buytick{
+    border-color: black;
+}
+.paying {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.butnpay{
+    border:3px solid black;
+    border-radius: 9px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: white;
 }

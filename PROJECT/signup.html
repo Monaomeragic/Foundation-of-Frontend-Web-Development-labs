@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<link rel="stylesheet" href="style.css">
-<title>BILLIE EILLISH</title>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BILLIE EILLISH</title>
 </head>
 <body>
  <div class="navbar">
@@ -12,7 +13,7 @@
         </div>
     </a>
     <a href="./music.html">Music</a>
-    <a href="./events.html">Events</a>
+    <a href="./events.html">Tour</a>
     <div class="nav_right">
         <a href="./signup.html" class="bold">Sign up</a>
  </div>
@@ -21,40 +22,39 @@
     <br>
         <h2>Sign up for receiving notification about events in your city</h2>
         <br>
-       <form action="./project.html" class="need-validation" method="get">
+       <form action="./project.html">
         <div class="sign"> 
 
           <br>
           <img src="./images/billie3.png" width="160" height="75">
           <br><br>
 
-          <div class="form-group">
+          <div>
             <label for="name">Name</label>
             <br>
-            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-            <div class="invalid-feedback">Please enter your name.</div>
+            <input type="text"  id="name" placeholder="Enter name:" required>
+
         </div>
           <br>
-          <div class="form-group">
+          <div>
             <label for="surname">Surname</label>
             <br>
-            <input type="text" class="form-control" id="surname" placeholder="Enter surname" required>
-            <div class="invalid-feedback">Please enter your surname.</div>
+            <input type="text"  id="surname" placeholder="Enter surname:" required>
         </div>
           <br>
-          <div class="form-group">
+          <div>
             <label for="email">Email</label>
             <br>
-            <input  type="email" class="form-control" id="email" placeholder="Enter email:" >
+            <input  type="email" id="email" placeholder="Enter email:" required>
           </div>
           <br>
-          <div class="form-group">
+          <div >
             <label for="birthdate">Birth date</label>
             <br>
-            <input type="date" class="form-control" id="birthdate" required>
+            <input type="date" id="birthdate" required>
         </div>
           <br>
-          <div class="form-group">
+          <div>
             <label for="gender">Gender</label>
             <br>
             <input type="radio" id="female" name="gender" value="female">
@@ -62,16 +62,17 @@
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
           <br>
-          <div class="form-group">
+          <div>
             <label for="city">City</label>
             <br>
-            <input type="text" class="form-control" id="city" placeholder="Enter your city">
+            <input type="text" id="city" placeholder="Enter your city" required>
         </div>
           <br>
-            <button type="submit" class="submit" class="btn btn-primary">Submit
+            <button type="submit" class="submit">Submit
             </button>
         </a>
         </div>
+        <br>
     </form>
  </table>
     <footer>
