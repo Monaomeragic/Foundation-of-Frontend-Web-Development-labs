@@ -1,6 +1,8 @@
-body {
+body,html {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
   .header {
 padding: 80px;
@@ -8,39 +10,41 @@ text-align: center;
 background: #090b0e;
 color: white;
 }
-.navbar{
-    border:1px solid rgb(255, 255, 255); 
-    overflow:hidden;
+.navbar {
+    background-color: #111010;
+    border: 1px solid #fff;
+    overflow: hidden;
     width: 100%;
-background-color: #111010;
-grid-row-end: form;
-font-family: "Copperplate",Fantasy;
-
+    font-family: "Copperplate", Fantasy;
+    height: 70px;
 }
-.navbar a{
-    float: left;
-    display: block; 
+
+.navbar-brand img {
+    width: 32px;
+    height: 36px;
+    margin-right: 15px;
+    padding-left: 15px;
+}
+
+
+.navbar-nav .nav-link {
     color: white;
     text-align: center;
-    padding: 17px 29px; 
-    font-size: 15px;
-    height: 16px;
-
-    text-decoration: none; 
+    padding: 20px 29px; 
+    margin-right: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent; 
+    transition: border-bottom-color 0.3s ease; 
 }
-.navbar a:hover {
-    
-    color: rgb(255, 255, 255);
+.navbar-nav .nav-link:hover {
+    color: white;
+    border-bottom-color: rgb(44, 174, 15);
+}
+.navbar-nav .nav-item .nav-link.active {
     border-bottom: 3px solid rgb(44, 174, 15);
-    height: 16px; 
 }
-a.bold {
-    font-weight: bold;
-     border-bottom: 3px solid rgb(44, 174, 15);
-}
-.nav_right{
-    float: right;
-}
+
+
 .sign{
     text-align:center;
     width:100%;
@@ -92,13 +96,15 @@ input{
     align-items: center;
 }
 .albums {
+    margin-bottom: 20px;
     margin: 20px;
     border: 3px solid #ccc;
     float: left;
-    width: 240px;
+    width: 245px;
     height: 320px;
     border-radius: 9px;
     transition: border-width 0.5s ease;
+    justify-content: center;
   }
   
 .albums:hover {
@@ -116,10 +122,8 @@ input{
     height: auto;
     border-radius: 6px;
   }
-  footer {
-    color: black;
-    text-align: center;
-    padding: 10px 0;
+  .albums-container {
+    padding-bottom: 100px;
 }
 .albfont{
     font-family: Courier New;
@@ -166,13 +170,14 @@ input{
 }
 .image{
     flex: 1;
-    
+    padding-top: 30px;
 }
 .image img{
     border: 3px solid rgb(44, 174, 15);
     border-radius: 12px;
-    height: 92%;
+    height: 90%;
     width: 52%;
+    
     
 
 }
@@ -244,7 +249,7 @@ input{
 }
 .image2 img{
     border: 3px solid rgb(44, 174, 15);
-    height: 95%;
+    height: 83%;
     width: 100%;
     border-radius: 9px;
 
@@ -268,10 +273,10 @@ input{
     
 }
 .tick{
-    text-align: center;
+    text-align: left;
     font-family: "Copperplate",Fantasy;
     padding-right: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-left: 30px;
 }
 .picevent{
@@ -288,10 +293,15 @@ input{
     margin: 0;
 }
 
-.buybutn,.time{
+.buybutn{
+    margin-top: 12px;
+    margin-left: auto;
+}
+
+.time{
     font-family: "Copperplate",Fantasy;
     margin-left: auto;
-    margin-top: 19px;
+    margin-top: 25px;
     color:rgb(44, 174, 15);
 }
 .butnconcert {
@@ -345,4 +355,18 @@ form {
     text-decoration: none;
     font-size: 16px;
     background-color: white;
+}
+footer {
+    background-color: black ; 
+    color: white; 
+    width: 100%;
+    padding: 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    height: 70px;
+}
+.content {
+    flex:1 0 auto;
 }
