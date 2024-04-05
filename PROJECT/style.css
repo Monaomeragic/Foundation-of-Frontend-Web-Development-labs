@@ -16,9 +16,7 @@ color: white;
     overflow: hidden;
     width: 100%;
     font-family: "Copperplate", Fantasy;
-    height: 70px;
 }
-
 .navbar-brand img {
     width: 32px;
     height: 36px;
@@ -26,24 +24,23 @@ color: white;
     padding-left: 15px;
 }
 
-
 .navbar-nav .nav-link {
     color: white;
     text-align: center;
-    padding: 20px 29px; 
-    margin-right: 20px;
-    text-decoration: none;
+    padding: 15px; 
+    margin-right: 10px;
     border-bottom: 3px solid transparent; 
     transition: border-bottom-color 0.3s ease; 
 }
+
 .navbar-nav .nav-link:hover {
     color: white;
     border-bottom-color: rgb(44, 174, 15);
 }
+
 .navbar-nav .nav-item .nav-link.active {
     border-bottom: 3px solid rgb(44, 174, 15);
 }
-
 
 .sign{
     text-align:center;
@@ -105,6 +102,7 @@ input{
     border-radius: 9px;
     transition: border-width 0.5s ease;
     justify-content: center;
+    align-items: center;
   }
   
 .albums:hover {
@@ -124,6 +122,7 @@ input{
   }
   .albums-container {
     padding-bottom: 100px;
+    width: 100%;
 }
 .albfont{
     font-family: Courier New;
@@ -134,11 +133,15 @@ input{
     align-items: left;
     width: 120px;
     height: 70px;
+    margin-right: 50%;
+    width: 50%;
 }
 .onj{
     text-align:right;
     font-size: 25px;
     font-family: "Lucida Handwriting",cursive;
+    width: 50%;
+    margin-left: 50%;
 }
 .green{
     text-align:right;
@@ -265,11 +268,14 @@ input{
     width: 100%;
     border: 3px solid #ccc;
     float: left;
-    height: 80px;
+    height: auto;
     border-radius: 19px;
     transition: border-width 0.5s ease;
     display: flex;
     text-align: center;
+    flex-wrap: wrap; 
+    align-items: center; 
+
     
 }
 .tick{
@@ -278,6 +284,7 @@ input{
     padding-right: auto;
     padding-top: 10px;
     margin-left: 30px;
+    
 }
 .picevent{
    padding-left: 10px;
@@ -296,6 +303,7 @@ input{
 .buybutn{
     margin-top: 12px;
     margin-left: auto;
+    width: fit-content;
 }
 
 .time{
@@ -304,8 +312,16 @@ input{
     margin-top: 25px;
     color:rgb(44, 174, 15);
 }
+@media screen and (max-width: 768px) {
+    .tickets {
+        font-size: 12px; 
+    }
+    .tick p,.tick h2{
+        font-size: 12px;
+    }
+} 
 .butnconcert {
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 16px;
     transition-duration: 0.4s;
@@ -315,6 +331,7 @@ input{
     border: 3px solid rgb(44, 174, 15);
     border-radius: 15px;
     font-family: "Copperplate",Fantasy;
+    box-sizing: border-box;
 }
 .butnconcert:active{
     background-color: rgb(44, 174, 15);
