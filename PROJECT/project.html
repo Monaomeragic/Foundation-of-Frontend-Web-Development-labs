@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./music.html">Music</a>
+                    <a class="nav-link" href="./music.html">Music</a> 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./events.html">Tour</a>
@@ -32,7 +32,15 @@
             </ul>
         </div>
     </nav>
-    
+    <div class="theme-switcher">
+        <button class="navbar-toggler theme-btn" type="button" onclick="toggleThemeDropdown()">
+            Theme
+        </button>
+        <div class="theme-dropdown">
+            <button class="dropdown-item" onclick="toggleTheme('dark')">Dark Theme</button>
+            <button class="dropdown-item" onclick="toggleTheme('light')">Light Theme</button>
+        </div>
+    </div>
     <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -96,6 +104,7 @@
 </div>
 </table>
 <br>
+<table>
 <div class="ab">
     <p>Billie Eilish has had several successful tours, including:</p>
 </div>
@@ -127,6 +136,7 @@
      </ul><br><br><br>
     </div>
 </div>
+</table>
 <footer class="footer mt-auto py-3">
     <div class="container text-white text-center">
         <a href="https://www.instagram.com/billieeilish/" target="_blank" class="text-white">
@@ -148,6 +158,43 @@
         $(document).ready(function(){
             $('#welcomeModal').modal('show');
         });
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p-1").hide();
+            });
+        });
+        function toggleThemeDropdown() {
+        const themeDropdown = document.querySelector('.theme-dropdown');
+        themeDropdown.classList.toggle('show');
+    }
+
+    // Function to toggle the theme
+    function toggleTheme(theme) {
+        // Remove existing theme classes
+        document.body.classList.remove('dark-theme', 'light-theme');
+
+        // Add the selected theme class
+        document.body.classList.add(theme + '-theme');
+
+        // Store the selected theme in local storage
+        localStorage.setItem('theme', theme);
+    }
+
+    // Function to apply the stored theme preference
+    function applyStoredTheme() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            toggleTheme(storedTheme);
+        } else {
+            // Default to the light theme if no stored preference
+            toggleTheme('light');
+        }
+    }
+
+    // Apply the stored theme preference when the page loads
+    window.onload = applyStoredTheme;
+</script>
+
     </script>
 </body>
 </html>

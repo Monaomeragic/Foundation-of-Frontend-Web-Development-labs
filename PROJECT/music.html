@@ -14,23 +14,24 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link active" class="bold" href="./music.html">Music</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./events.html">Tour</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
+                </li> 
                 <li class="nav-item">
                     <a class="nav-link" href="./signup.html">Sign up</a>
                 </li>
             </ul>
         </div>
     </nav>
+    
+    
+
 <div class="container-fluid">
 <div class="albums">
     <a href="https://www.youtube.com/watch?v=DyDfgMOUjCI&list=PLsCPTY_MPoPZrzRDbMdl06imZkcwwgFVH&pp=iAQB" target="_blank"> 
@@ -45,7 +46,7 @@
     <img src="./images/album2.png" alt="songs" width="600" height="400">
 </a>
 <div class="desc">Happier Than Ever
-<p class="albfont">2021</p>
+    <p class="albfont">2021</p>
 </div>
 </div>
 <div class="albums">
@@ -164,10 +165,39 @@
             <img src="images/logo7.webp" alt="Instagram" style="width: 32px; height:35px;">
         </a> 
         <p>created by Mona Omeragic</p>
+        </div>
     </div>
 </footer>
+<!-- At the bottom of your HTML body -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+     function toggleThemeDropdown() {
+        const themeDropdown = document.querySelector('.theme-dropdown');
+        themeDropdown.classList.toggle('show');
+    }
+
+    function toggleTheme(theme) {
+        // Remove existing theme classes
+        document.body.classList.remove('dark-theme', 'light-theme');
+
+        // Add the selected theme class
+        document.body.classList.add(theme + '-theme');
+    }
+    function applyStoredTheme() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            toggleTheme(storedTheme);
+        } else {
+            // Default to the light theme if no stored preference
+            toggleTheme('light');
+        }
+    }
+
+    // Apply the stored theme preference when the page loads
+    window.onload = applyStoredTheme;
+    </script>
 </body>
 </html>
