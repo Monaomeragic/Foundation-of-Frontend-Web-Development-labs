@@ -13,17 +13,19 @@
             <img src="./images/billie2.png" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./music.html">Music</a> 
+                    <a class="nav-link" href="./music.html">Music</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./events.html">Tour</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                  </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -41,38 +43,21 @@
             <button class="dropdown-item" onclick="toggleTheme('light')">Light Theme</button>
         </div>
     </div>
-    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Billie Eillish page</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    </div>
+      </div>
     <div class="prva">
-        <img src="./images/billie4.jpeg">
+        <img src="./images/billie4.png" target="_blank">
      </div>
-<table>
+
 <div class="onj">
        <p>"I've never been afraid to express myself, even if it means going against the norm,"</p>
        <p>-Billie Eillish quote</p>
 </div>
+<br>
+<br>
 <div class="green">
     <br>
-    <br>
-    <br><br>
+    
     <div class="ab">
     <p>Billie Eilish is an American singer-songwriter who rose to fame in the music industry at a very young age. Born on December 18, 2001, in Los Angeles, California, as Billie Eilish Pirate Baird O'Connell, she gained significant attention with her debut single "Ocean Eyes" in 2015. The song was initially written and produced by her brother Finneas O'Connell for his band, but Billie's version quickly went viral on various platforms like SoundCloud.</p>
 
@@ -101,10 +86,10 @@
     <img src="./images/billie5.jpeg" alt="o">
 </div>
     </div>
-</div>
-</table>
+
+
 <br>
-<table>
+
 <div class="ab">
     <p>Billie Eilish has had several successful tours, including:</p>
 </div>
@@ -117,14 +102,21 @@
         </div>
 
  <div class="tt2">
-    <ul>
-        <li><p style="color:rgb(44, 174, 15)">When We All Fall Asleep, Where Do We Go? Tour (2019):</p> This tour supported her debut studio album, "When We All Fall Asleep, Where Do We Go?" The tour kicked off in April 2019 and included dates across North America, Europe, and Oceania.</li>
-        
-        <li><p style="color:rgb(44, 174, 15)">Where Do We Go? World Tour (2020):</p> This tour was planned to support her album "When We All Fall Asleep, Where Do We Go?" but was postponed due to the COVID-19 pandemic.</li>
-    
-        <li><p style="color:rgb(44, 174, 15)">Happier Than Ever, The World Tour (2022): </p>This tour supports her second studio album, "Happier Than Ever." It commenced in February 2022 and includes dates across North America, Europe, and Oceania.</li>
-        <br>
-    
+    <button class="toggle-button" onclick="toggleContent('early-beginnings')">Early Beginnings</button>
+<div id="early-beginnings" class="content">
+  <p>Billie Eilish's interest in music started at a young age. She began writing and recording her own songs with her brother, Finneas O'Connell, who is also a musician and songwriter.</p>
+</div>
+<br><br>
+<button class="toggle-button" onclick="toggleContent('ocean-eyes')">"Ocean Eyes" (2015)</button>
+<div id="ocean-eyes" class="content">
+  <p>Eilish gained significant attention with her debut single "Ocean Eyes," which was initially written by Finneas for his band. The song was uploaded to SoundCloud and quickly went viral, launching Billie's career.</p>
+</div>
+<br><br>
+<button class="toggle-button" onclick="toggleContent('breakthrough-album')">Breakthrough Album</button>
+<div id="breakthrough-album" class="content">
+  <p>In March 2019, Billie Eilish released her debut studio album, "When We All Fall Asleep, Where Do We Go?" The album received widespread critical acclaim and commercial success, debuting atop the charts in multiple countries. It showcased Eilish's unique sound, blending elements of pop, electropop, and alternative music.</p>
+</div>
+    <br>
         <div class="gg"></div>
         <br>
         <p>If you want to see her 2024 tour click on the button under.</p>
@@ -136,7 +128,7 @@
      </ul><br><br><br>
     </div>
 </div>
-</table>
+
 <footer class="footer mt-auto py-3">
     <div class="container text-white text-center">
         <a href="https://www.instagram.com/billieeilish/" target="_blank" class="text-white">
@@ -151,6 +143,8 @@
         <p>created by Mona Omeragic</p>
     </div>
 </footer>
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -193,6 +187,16 @@
 
     // Apply the stored theme preference when the page loads
     window.onload = applyStoredTheme;
+
+    
+    function toggleContent(id) {
+    var content = document.getElementById(id);
+    if (content.style.display === "none") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  }
 </script>
 
     </script>

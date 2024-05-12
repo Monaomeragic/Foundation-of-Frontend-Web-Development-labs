@@ -2,7 +2,6 @@ body,html {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
     height: 100%;
-    width: 100%;
   }
   .header {
 padding: 80px;
@@ -47,7 +46,7 @@ color: white;
     width:100%;
     font-size:120%;
     color: white;
-    background-color:  rgb(0, 0, 0);
+    background-color:  black;
     border-top:3px solid rgb(44, 174, 15) ;
     font-family: "Copperplate",Fantasy;
 }
@@ -211,8 +210,9 @@ input{
 .tt2{
     color:black;
     font-family: "Copperplate",Fantasy;
-    width: 50%;
+    width: 50%; 
     text-align: center;
+    background-color: transparent;
  
 
 }
@@ -284,6 +284,7 @@ input{
     padding-right: auto;
     padding-top: 10px;
     margin-left: 30px;
+    color: black;
     
 }
 .picevent{
@@ -427,23 +428,54 @@ footer {
 }
 
 .light-theme {
-    /* Add light theme styles here */
     background-color: #fff;
     color: black;
 }
 .theme-switcher .theme-btn{
-    color: black; /* Change the color to white or any other color that contrasts with your navbar background */
-    background-color: transparent; /* Make the background transparent */
+    color: black; 
+    background-color: transparent; 
 }
-/* For dark theme */
 .dark-theme .theme-btn {
     color: white;
 }
 
-/* For light theme */
 .light-theme .theme-btn {
     color: black;
 }
 .dark-theme .ab{
     color: white;
 }
+.dark-theme .butnconcert{
+    background-color: #222;
+    color: white;
+}
+.dark-theme .tick{
+    color: white;
+    background-color: transparent;
+}
+.tick h2,
+.tick p {
+    color: black; }
+
+.dark-theme .tick h2,
+.dark-theme .tick p {
+    color: white; 
+    background-color: transparent;
+}
+.toggle-button {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .content {
+    display: none;
+    padding: 10px;
+    background-color: #ddd;
+    margin-bottom: 15px;
+  }

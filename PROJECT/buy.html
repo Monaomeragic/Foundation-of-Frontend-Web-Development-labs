@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-       <meta charset="utf-8">
-       <title>Billie Eillish</title>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Billie Eilish</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+</head>
+<body>
 
-   </head>
-   <body >
+<div class="paying">
+    <h1>Ticket Purchasing</h1>
+    <p>This transaction must be completed in 5 minutes.</p>
+    <form id="ticketForm" action="./transaction.html">
+        <label>How many tickets would you like to purchase?</label>
+        <input class="card" id="inputTicket" name="ticketQuantity" type="number" value="0" required>
 
-       <div class="paying">
-        <h1>Ticket Purchasing</h1>
-        <p>This transaction must be completed in 5 minutes.</p>
-        <form action="./transaction.html">
-            <label >How many tickets would you like to purchase?</label>
-            <input class="card" id="inputTicket" required type="number" value="0">
+        <label>Name:</label>
+        <input class="card" id="name" name="fullName" type="text" placeholder="Enter name" required>
 
-            <label >Name:</label>
-            <input class="card" id="name" type="text" placeholder="Enter name" required>
+        <label for="email">E-mail:</label>
+        <input class="card" id="email" name="email" type="email" placeholder="Enter e-mail address" required>
 
-            <label for="email">E-mail:</label>
-            <input class="card" id="email" type="email" placeholder="Enter e-mail address" required >
+        <label for="password">Password:</label>
+        <input class="card" id="password" name="password" type="password" placeholder="Enter password" required>
 
-            <a href="./transaction.html">
-                <button class="butnpay">Pay
-                    </button> 
-        </form>
-    </div>
+        <button type="submit" class="butnpay">Pay</button>
+    </form>
+</div>
 
+<script>
+    $(document).ready(function () {
+        $.validator.addMethod("passwordStrength", function (value, element) {
+            return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(value);
+        }, "Password must be at least 8 characters long and contain at least one letter and one number.");
 
+        $('#ticketForm').validate({
+            rules: {
+                ticketQuantity: {
+                    required: true,
+                    min: 1 
+                },
+                fullName: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    passwordStrength: true
+                }
+            },
+            messages: {
+                ticketQuantity: {
+                    min: "Please select at least 1 ticket."
+                }
+            },
+            submitHandler: function (form) { 
+                form.submit();
+            }
+        });
+    });
+</script>
 
-   </body>
+</body>
 </html>

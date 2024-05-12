@@ -24,6 +24,11 @@
                     <a class="nav-link" href="./events.html">Tour</a>
                 </li> 
                 <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="./signup.html">Sign up</a>
                 </li>
             </ul>
@@ -33,6 +38,7 @@
     
 
 <div class="container-fluid">
+    
 <div class="albums">
     <a href="https://www.youtube.com/watch?v=DyDfgMOUjCI&list=PLsCPTY_MPoPZrzRDbMdl06imZkcwwgFVH&pp=iAQB" target="_blank"> 
         <img src="./images/album1.png" alt="songs" width="600" height="400">
@@ -168,7 +174,7 @@
         </div>
     </div>
 </footer>
-<!-- At the bottom of your HTML body -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -180,10 +186,7 @@
     }
 
     function toggleTheme(theme) {
-        // Remove existing theme classes
         document.body.classList.remove('dark-theme', 'light-theme');
-
-        // Add the selected theme class
         document.body.classList.add(theme + '-theme');
     }
     function applyStoredTheme() {
@@ -191,13 +194,13 @@
         if (storedTheme) {
             toggleTheme(storedTheme);
         } else {
-            // Default to the light theme if no stored preference
+           
             toggleTheme('light');
         }
     }
 
-    // Apply the stored theme preference when the page loads
     window.onload = applyStoredTheme;
+
     </script>
 </body>
 </html>
