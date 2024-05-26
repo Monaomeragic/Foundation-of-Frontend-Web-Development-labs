@@ -1,163 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BILLIE EILLISH</title>
+    <meta charset="utf-8">
+    <title>Sign-Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="./project.html">
-        <img src="./images/billie2.png" alt="Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse show" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="./music.html">Music</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./events.html">Tour</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery.html">Gallery</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="./signup.html">Sign up</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
-<div class="container-expand">
-    <br>
-    <h2>Sign up for receiving notification about events in your city</h2>
-    <div id="dataContainer">
-    </div>
-    <br>
-    <form id="signupForm"> 
-        <div class="sign"> 
-          <br>
-          <img src="./images/billie3.png" width="160" height="75">
-          <br><br>
-          <div>
-            <label for="name">Name</label>
-            <br>
-            <input type="text"  id="name" placeholder="Enter name:" required>
-        </div>
-          <br>
-          <div>
-            <label for="surname">Surname</label>
-            <br>
-            <input type="text"  id="surname" placeholder="Enter surname:" required>
-        </div>
-          <br>
-          <div>
-            <label for="email">Email</label>
-            <br>
-            <input  type="email" id="email" placeholder="Enter email:" required>
-          </div>
-          <br>
-          <div >
-            <label for="birthdate">Birth date</label>
-            <br>
-            <input type="date" id="birthdate" required>
-        </div>
-          <br>
-          <div>
-            <label for="gender">Gender</label>
-            <br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-          <br>
-          <div>
-            <label for="city">City</label>
-            <br>
-            <input type="text" id="city" placeholder="Enter your city" required>
-        </div>
-          <br>
-            <button type="submit" class="submit">Submit
-            </button>
-        </div>
-        <br>
+<div class="paying">
+    <h1>Sign-Up</h1>
+    <form id="signUpForm">   
+        <label for="signUpFullName">Full Name:</label>
+        <input class="card" id="signUpFullName" name="signUpFullName" type="text" placeholder="Enter full name" required>
+
+        <label for="signUpPhoneNumber">Phone Number:</label>
+        <input class="card" id="signUpPhoneNumber" name="signUpPhoneNumber" type="tel" placeholder="Enter phone number" required>
+
+        <label for="signUpEmail">E-mail:</label>
+        <input class="card" id="signUpEmail" name="signUpEmail" type="email" placeholder="Enter e-mail address" required>
+
+        <label for="signUpPassword">Password:</label>
+        <input class="card" id="signUpPassword" name="signUpPassword" type="password" placeholder="Enter password" required>
+
+        <button type="submit" class="butnpay">Sign-Up</button>
     </form>
-</div><br><br>
-
-<footer class="footer mt-auto py-3">
-  <div class="container text-white text-center">
-    <a href="https://www.instagram.com/billieeilish/" target="_blank" class="text-white">
-      <img src="images/logo3.png" alt="Instagram" style="width: 30px; height: 30px;">
-  </a> 
-  <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/billieeilish/&ved=2ahUKEwiCo9aB5p6FAxW6hf0HHWP9BRYQFnoECBQQAQ&usg=AOvVaw1ypbOS7lf_jcBtoPBYX0Bg" target="_blank" class="text-white">
-      <img src="images/logo4.png" alt="fb" style="width: 30px; height:29px;">
-  </a> 
-  <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/billieeilish&ved=2ahUKEwjY4fap5p6FAxWm_rsIHQT1CF0QFnoECBEQAQ&usg=AOvVaw2l0kUViWZF1DhRGmZqMpqM" target="_blank" class="text-white">
-      <img src="images/logo7.webp" alt="Instagram" style="width: 32px; height:35px;">
-  </a> 
-  <p>created by Mona Omeragic</p>
-  </div>
-</footer>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
 
 <script>
+    $(document).ready(function () {
+        const users = JSON.parse(localStorage.getItem('users')) || {};
 
-  function displayUserData(email, city) {
-    const container = document.getElementById('dataContainer');
-    container.innerHTML = `
-      <p>Email: ${email}</p>
-      <p>City: ${city}</p>
-      <button onclick="editUserData('${email}', '${city}')">Edit</button>
-      <button onclick="deleteUserData()">Delete</button>
-    `;
-    
-  
-    fetchConcertDates(city);
-  }
+        $('#signUpForm').validate({
+            rules: {
+                signUpEmail: {
+                    required: true,
+                    email: true
+                },
+                signUpPassword: {
+                    required: true,
+                    minlength: 8
+                },
+                signUpFullName: {
+                    required: true
+                },
+                signUpPhoneNumber: {
+                    required: true,
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 15
+                }
+            },
+            messages: {
+                signUpEmail: {
+                    required: "Please enter your email address.",
+                    email: "Please enter a valid email address."
+                },
+                signUpPassword: {
+                    required: "Please provide a password.",
+                    minlength: "Your password must be at least 8 characters long."
+                },
+                signUpFullName: {
+                    required: "Please enter your full name."
+                },
+                signUpPhoneNumber: {
+                    required: "Please enter your phone number.",
+                    digits: "Please enter only digits.",
+                    minlength: "Your phone number must be at least 10 digits long.",
+                    maxlength: "Your phone number must be no more than 15 digits long."
+                }
+            },
+            submitHandler: function (form) {
+                const email = $('#signUpEmail').val();
+                const password = $('#signUpPassword').val();
+                const fullName = $('#signUpFullName').val();
+                const phoneNumber = $('#signUpPhoneNumber').val();
 
- 
-  document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    const email = document.getElementById('email').value;
-    const city = document.getElementById('city').value;
-
-
-    displayUserData(email, city);
-
-    this.reset();
-  });
-
-  function editUserData(email, city) {
-    const newCity = prompt("Enter new city:");
-    displayUserData(email, newCity);
-  }
-
-
-  function deleteUserData() {
-    const container = document.getElementById('dataContainer');
-    container.innerHTML = ''; 
-  }
-
-
-  function fetchConcertDates(city) {
-    fetch('concerts.json')
-        .then(response => response.json())
-        .then(data => {
-            const concertDates = data[city];
-            const concertDatesHtml = concertDates.map(date => `<li>${date}</li>`).join('');
-            document.getElementById('dataContainer').insertAdjacentHTML('beforeend', `<div><ul>${concertDatesHtml}</ul></div>`);
-        })
-        .catch(error => console.error('Error fetching concert dates:', error));
-  }
+                if (!users[email]) {
+                    users[email] = { password, fullName, phoneNumber };
+                    localStorage.setItem('users', JSON.stringify(users));
+                    toastr.success('Sign-Up successful. Please log in.', 'Success');
+                    setTimeout(function() {
+                        window.location.href = 'login.html';
+                    }, 2000);
+                } else {
+                    toastr.error('User already exists. Please log in.', 'Error');
+                }
+            }
+        });
+    });
 </script>
 
 </body>
 </html>
+

@@ -40,6 +40,13 @@ color: white;
 .navbar-nav .nav-item .nav-link.active {
     border-bottom: 3px solid rgb(44, 174, 15);
 }
+.gallery-page .navbar-nav .nav-link.active {
+    border-bottom-color: rgb(17, 33, 112);
+}
+.gallery-page .navbar-nav .nav-link:hover{
+    border-bottom-color: rgb(17, 33, 112);
+}
+
 
 .sign{
     text-align:center;
@@ -139,8 +146,9 @@ input{
     text-align:right;
     font-size: 25px;
     font-family: "Lucida Handwriting",cursive;
-    width: 50%;
-    margin-left: 50%;
+    width: 60%;
+    margin-left: 39%;
+
 }
 .green{
     text-align:right;
@@ -336,7 +344,9 @@ input{
 }
 .butnconcert:active{
     background-color: rgb(44, 174, 15);
+    border: 3px solid rgb(44, 174, 15);
 }
+
 .buytick{
     border-color: black;
 }
@@ -374,16 +384,9 @@ form {
     font-size: 16px;
     background-color: white;
 }
-footer {
-    background-color: black ; 
-    color: white; 
-    width: 100%;
-    padding: 0 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    height: 70px;
+
+.theme-switcher {
+    display: inline-block;
 }
 .content {
     flex:1 0 auto;
@@ -472,10 +475,113 @@ footer {
     width: 100%;
     text-align: left;
   }
-
+  .view-more-button{
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: left;
+  }
   .content {
     display: none;
     padding: 10px;
     background-color: #ddd;
     margin-bottom: 15px;
   }
+  .dark-theme h2{
+    color: white;
+    background-color: #222;
+  }
+  .gallery {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px; 
+    float: left;
+    width: 150px; 
+    height: 200px; 
+    border-radius: 9px;
+    overflow: hidden; 
+    border-radius: 10px;
+    border: 2px ;
+
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+  }
+  .big{
+    width:100%;
+    height: 45%;
+  }
+  .big img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hit{
+    margin: 0; 
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+  }
+  .tourphoto{
+    width:50%;
+    height: 90%;
+  }
+  .tourphoto img{
+    height: 80%;
+    width: 120%;
+  }
+ 
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    display: flex;
+}
+
+.songs, .faq {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+.toggle-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+.toggle-button:focus {
+    outline: none; /* Remove the default blue outline */
+}
+.album-description {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .tour2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .tourphoto {
+        order: 2;
+    }
+    .album-description {
+        order: 1;
+        margin-top: 0;
+    }
+}

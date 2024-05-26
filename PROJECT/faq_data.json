@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is the release date of the album?",
+        "answer": "The album 'Hit Me Hard and Soft' is set to release on 17 May 2024"
+    },
+    {
+        "question": "How many tracks are there in the album?",
+        "answer": "The album contains a total of 10 tracks."
+    }
+    ,
+    {
+            "question": "What are the songs on the album?",
+            "answer": [
+                "SKINNY",
+                "LUNCH",
+                "CHIHIRO",
+                "BIRD OF A FEATHER",
+                "WILDFLOWER"
+                
+            ]
+    }
+]
