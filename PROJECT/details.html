@@ -36,13 +36,54 @@
               </ul>
           </div>
     </nav>
-<div class="container">
+<div class="container-fluid">
     <h1>Billie Eilish Album - Hit Me Hard and Soft</h1>
     <div class="details">
-        <!-- Add more details about the album here -->
         <p>This page contains more details about the album.</p>
     </div>
+    <div class="text">
+        <p>Various news articles reported billboards teasing snippets of lyrics for the album that appeared in multiple cities in Australia, the United Kingdom, and the United States in April 2024;[18] although it does not mention the artist's name, her signature "blohsh" was recognized.[19][a] The promotional billboards display cryptic lyrics, such as "She's the headlights I'm the deer" or "Did I cross the line?".[21] Eilish later changed her profile picture to a "blue circle" and shared another image with the caption saying "Do you know how to bend?".[22] Eilish added her followers to an Instagram feature that lets limited accounts see exclusive stories, called "Close Friends". The post features a "lo-fi" image showcasing the artist's hand,[23] and an image of her new midriff tattoo.[24] On April 29, 2024, Eilish announced the Hit Me Hard and Soft: The Tour in support of the album. The tour is set to start on September 29, 2024, at the Videotron Centre in Quebec City, Canada.[25] The 2025 leg of the tour is set to start on February 18, 2025, at the Brisbane Entertainment Centre.</p>
+    </div>
+    <br><br>
+    <div class="shop1">
+        <img src="./images/CD3-Photoroom.png" height="200px" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img="./images/CD3-Photoroom.png">
+        <img src="./images/CD4-Photoroom.png" height="180px" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img="./images/CD4-Photoroom.png">
+        <img src="./images/cd9.jpg" height="190px" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img="./images/cd9.jpg">
+        <img src="./images/cd5.jpg" height="190px" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img="./images/cd5.jpg">
+        <img src="./images/cd6.jpg" height="190px" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img="./images/cd6.jpg">
+        <div class="text-container">
+            <p>if you want to buy her new album</p>
+            <p>you can click on this link</p>
+            <a href="store.billieeilish.com/collections/hit-me-hard-and-soft-music">SHOP</a>
+        </div>
 </div>
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="sve.js"></script>
+<script>
+    $('#imageModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var imgSrc = button.data('img');
+            var modal = $(this);
+            modal.find('.modal-body #modalImage').attr('src', imgSrc);
+        });
+</script>
 
 </body>
 </html>

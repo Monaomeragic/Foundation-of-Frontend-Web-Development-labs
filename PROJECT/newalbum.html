@@ -36,6 +36,7 @@
           </ul>
       </div>
 </nav>
+<div class="svealbum">
 <div class="hit">
 <div class="big">
   <img src="./images/hit1.jpg" alt="hit">
@@ -119,6 +120,7 @@
                       <img src="./images/hit2.jpeg" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img="./images/hit2.jpeg">
                   </div>
               </div>
+              <br>
               <div class="album-description">
                   <h2>Hit Me Hard and Soft</h2>
                   <p>Hit Me Hard and Soft is the third studio album by American singer-songwriter Billie Eilish, released on May 17, 2024, through Darkroom and Interscope Records. It is her first full-length studio album release since 2021's Happier Than Ever. Eilish co-wrote the album with her brother and frequent collaborator Finneas, who also produced the album.</p>
@@ -127,6 +129,7 @@
             </div>
   </div>
 </div>
+</div>
 
 
 <div class="container">
@@ -134,8 +137,8 @@
   <div class="content">
       <div class="faq">
           <h2>FAQs</h2>
-          <div id="faq-content"></div>
-
+          <div class="faqque" id="faq-content"></div>
+<br>
       <div class="view-more">
         <a href="details.html" class="view-more-button">View More</a>
     </div>
@@ -163,8 +166,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
   $('#imageModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var imgSrc = button.data('img'); // Extract info from data-* attributes
+    var button = $(event.relatedTarget); 
+    var imgSrc = button.data('img'); 
     var modal = $(this);
     modal.find('.modal-body #modalImage').attr('src', imgSrc);
   });
@@ -198,11 +201,10 @@
     document.addEventListener("DOMContentLoaded", function() {
     const faqContent = document.getElementById("faq-content");
 
-    // Load FAQ data from JSON file via AJAX
+
     fetch('faq_data.json')
         .then(response => response.json())
         .then(data => {
-            // Generate HTML for each FAQ item
             data.forEach(faqItem => {
                 const button = document.createElement('button');
                 button.classList.add('toggle-button');
@@ -215,7 +217,7 @@
                 faqContent.appendChild(content);
             });
 
-            // Add click event listener to toggle buttons
+
             const toggleButtons = document.querySelectorAll(".toggle-button");
             toggleButtons.forEach(button => {
                 button.addEventListener("click", function() {

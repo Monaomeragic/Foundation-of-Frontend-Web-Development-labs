@@ -34,7 +34,8 @@
             </ul>
         </div>
     </nav>
-<div class="container-expand">
+    <div class="sveevent">
+    <div class="container-expand">
     <div class="tickets">
         <div class="picevent">
      <img src="./images/billie4.png" width="70px" height="70px">
@@ -381,7 +382,7 @@
     </div>
 </div>
 </div>
-</div>
+
 <div class="tickets">
     <div class="picevent">
     <img src="./images/billie4.png" width="70px" height="70px">
@@ -401,7 +402,8 @@
             </a>
     </div>
 </div>
-</div><div class="tickets">
+</div>
+<div class="tickets">
     <div class="picevent">
     <img src="./images/billie4.png" width="70px" height="70px">
     
@@ -603,32 +605,13 @@
     </div>
 </div>
 </div>
+    </div></div>
+    
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-         function toggleThemeDropdown() {
-        const themeDropdown = document.querySelector('.theme-dropdown');
-        themeDropdown.classList.toggle('show');
-    }
-
-    function toggleTheme(theme) {
-        document.body.classList.remove('dark-theme', 'light-theme');
-        document.body.classList.add(theme + '-theme');
-    }
-    function applyStoredTheme() {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) {
-            toggleTheme(storedTheme);
-        } else {
-            toggleTheme('light');
-        }
-    }
-
-    window.onload = applyStoredTheme;
-    </script>
+        <script src="sve.js"></script>
 </body>
 </html>

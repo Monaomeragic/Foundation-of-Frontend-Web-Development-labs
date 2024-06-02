@@ -1,8 +1,19 @@
-body,html {
+body{
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+html {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
+
   .header {
 padding: 80px;
 text-align: center;
@@ -321,14 +332,7 @@ input{
     margin-top: 25px;
     color:rgb(44, 174, 15);
 }
-@media screen and (max-width: 768px) {
-    .tickets {
-        font-size: 12px; 
-    }
-    .tick p,.tick h2{
-        font-size: 12px;
-    }
-} 
+
 .butnconcert {
     padding: 10px 20px;
     text-decoration: none;
@@ -391,80 +395,11 @@ form {
 .content {
     flex:1 0 auto;
 }
-.theme-switcher {
-    position: relative;
-    display: inline-block;
-    border: 3px solid rgb(44, 174, 15);
-}
 
-.theme-dropdown {
-    display: none;
-    position: absolute;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 3px solid rgb(44, 174, 15);
-}
-
-.theme-dropdown.show {
-    display: block;
-}
-
-.theme-dropdown .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 8px 16px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.theme-dropdown .dropdown-item:hover {
-    background-color: #f5f5f5;
-}
-
-.dark-theme{
-    /* Add dark theme styles here */
-    background-color: #222;
-    color: white;
-    height: 100%;
-}
-
-.light-theme {
-    background-color: #fff;
-    color: black;
-}
-.theme-switcher .theme-btn{
-    color: black; 
-    background-color: transparent; 
-}
-.dark-theme .theme-btn {
-    color: white;
-}
-
-.light-theme .theme-btn {
-    color: black;
-}
-.dark-theme .ab{
-    color: white;
-}
-.dark-theme .butnconcert{
-    background-color: #222;
-    color: white;
-}
-.dark-theme .tick{
-    color: white;
-    background-color: transparent;
-}
 .tick h2,
 .tick p {
     color: black; }
 
-.dark-theme .tick h2,
-.dark-theme .tick p {
-    color: white; 
-    background-color: transparent;
-}
 .toggle-button {
     background-color: #f4f4f4;
     color: #333;
@@ -566,13 +501,11 @@ h1 {
     padding: 10px;
 }
 .toggle-button:focus {
-    outline: none; /* Remove the default blue outline */
+    outline: none; 
 }
 .album-description {
     margin-top: 20px;
 }
-
-@media (max-width: 767px) {
     .tour2 {
         display: flex;
         flex-direction: column;
@@ -584,4 +517,121 @@ h1 {
         order: 1;
         margin-top: 0;
     }
+    
+
+
+.theme-switcher {
+    text-align: center;
+    margin: 20px;
+    
+    
+
+}
+.themebtn{
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(44, 174, 15);
+    border-radius: 6px;
+    outline: none;
+
+}
+body.dark-theme .themebtn{
+    background-color: #333;
+    color: white;
+    border: 3px solid rgb(44, 174, 15);
+    border-radius: 6px;
+    outline: none;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-theme .svealbum{
+    background-color: #333;
+    color: white;
+}
+body.dark-theme .sveevent{
+    background-color: #333;
+    color: white;
+}
+
+body.dark-theme .prva,
+body.dark-theme .onj,
+body.dark-theme .green,
+body.dark-theme .ma2,
+body.dark-theme .ab,
+body.dark-theme .tt2,
+body.dark-theme .content,
+body.dark-theme .butnevent,
+body.dark-theme .sve1
+ {
+    background-color: #333;
+    color: white;
+}
+body.dark-theme .toggle-button
+{
+    background-color: black;
+    color: white;
+}
+body.dark-theme .dd,
+body.dark-theme .dd * {
+    background-color: #333;
+    color: white;
+}
+body.dark-theme .tickets ,
+body.dark-theme .tickets *{
+    background-color: #333;
+    color: white;
+}
+body.dark-theme .container *{
+    background-color: #333;
+    color: white;
+}
+body.dark-theme input,
+body.dark-theme .submit{
+    background-color: #333;
+    color: white;
+
+}
+
+body.dark-theme .darkalbum1,
+body.dark-theme .darkalbum2,
+body.dark-theme .darkalbum3{
+    background-color: #333;
+    color: white;
+    background-color: inherit;
+    min-height: 65vh;
+    width: 100%;
+}
+body.dark-theme .faqque{
+    background-color: black;
+}
+.shop1 img{
+
+    margin-top: -40px;
+    width: 210px;
+
+}
+
+.shop1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -40px;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+.text-container a{
+    margin-left: 10px;
+}
+.shop1 img {
+    margin-right: 20px;
 }

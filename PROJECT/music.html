@@ -36,7 +36,7 @@
     </nav>
     
     
-
+<div class="darkalbum1">
 <div class="container-fluid">
     
 <div class="albums">
@@ -79,6 +79,8 @@
 <p class="albfont">2019</p>
 </div>
 </div>
+</div>
+<div class="darkalbum2">
 <div class="albums">
     <a href="https://www.youtube.com/watch?v=BboMpayJomw&pp=ygUObm8gdGltZSB0byBkaWU%3D" target="_blank">
     <img src="./images/album6.jpeg" alt="songs" width="600" height="400">
@@ -119,6 +121,8 @@
 <p class="albfont">2023</p>
 </div>
 </div>
+</div>
+<div class="darkalbum3">
 <div class="albums">
     <a href="https://www.youtube.com/watch?v=qpQSjf-0Lc8&pp=ygUVYml0Y2hlcyBicm9rZW4gaGVhcnRz" target="_blank">
     <img src="./images/album11.jpeg" alt="songs" width="600" height="400">
@@ -153,9 +157,12 @@
 </a>
 <div class="desc">my future
 <p class="albfont">2020</p>
-</div><br><br><br><br>
 </div>
 </div>
+</div></div>
+ 
+
+
 
 
 
@@ -164,29 +171,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-     function toggleThemeDropdown() {
-        const themeDropdown = document.querySelector('.theme-dropdown');
-        themeDropdown.classList.toggle('show');
-    }
-
-    function toggleTheme(theme) {
-        document.body.classList.remove('dark-theme', 'light-theme');
-        document.body.classList.add(theme + '-theme');
-    }
-    function applyStoredTheme() {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) {
-            toggleTheme(storedTheme);
-        } else {
-           
-            toggleTheme('light');
-        }
-    }
-
-    window.onload = applyStoredTheme;
-
-    </script>
+<script src="sve.js"></script>
+     
 </body>
 </html>
